@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+<script>
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+
+    
+    var tries = 1;
+    var maxTries = 3;
+
+    while (true){
+
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        } else if (tries!=maxTries) {
+            var message = "Intente de nuevo. Tiene " + maxTries-tries + " intentos restantes!";
+            alert(message);
+            tries++;
+        } else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+            break;
+        }
+
+    }
+
+    /*while (tries<3){
+
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if( inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada ) {
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            tries=maxTries;
+        } else if (tries!=maxTries) {
+            var message = "Intente de nuevo. Tiene " + maxTries-tries + " intentos restantes!";
+            alert(message);
+            tries++;
+        } else {
+            alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+
+    }*/
+
+    
+</script>

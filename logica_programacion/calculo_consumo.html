@@ -1,0 +1,15 @@
+<meta charset="utf-8">
+
+<h3>¿Alcohol o gasolina?</h3>
+
+<script>
+    function eficiencia(tanq, rec){
+        return rec/tanq
+    }
+    var tanque = 40;
+    //var tanque = prompt("Indique el tamano del tanque del carro:");
+    var recorrido = 480;
+    document.write("La eficiencia del carro a gasolina es de " + eficiencia(tanque,recorrido) + " km/L.");
+    recorrido = 300;
+    document.write("La eficiencia del carro con alcohol es de " + eficiencia(tanque,recorrido) + " km/L.")
+</script>
